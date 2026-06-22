@@ -3,173 +3,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Yves Jivago | Advogado de Direito de Família e Direito Médico</title>
+
+    <!-- Fontes: Cormorant (títulos serifados elegantes) + Montserrat (corpo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="style.css">
-    <title>Yves Jivago | Advocacia Estratégica</title>
 </head>
 <body>
 
-    <nav class="barra">
-        <p><a href="#inicio">Início</a></p>
-        <p><a href="#sobre">Advogado</a></p>
-        <p><a href="#atuacoes">Áreas de Atuação</a></p>
-        <p><a href="#contatos">Contatos</a></p>
+    <!-- ============ BARRA DE PROGRESSO DE SCROLL ============ -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ============ NAVEGAÇÃO ============ -->
+    <nav id="navbar">
+        <a href="#inicio" class="nav-logo">
+            <img src="logo.jpeg" alt="Logo Yves Jivago">
+            <div class="nav-logo-text">
+                <span>Yves Jivago</span>
+                <span>Advocacia</span>
+            </div>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Advogado</a></li>
+            <li><a href="#atuacoes">Atuação</a></li>
+            <li><a href="#contato" class="nav-cta">Consulta</a></li>
+        </ul>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
 
-    <section class="inicio" id="inicio">
-        <div class="div_des_inicial">
-            <h1>YVES</h1>
-            <h1>JIVAGO</h1>
-            <h2>Soluções estratégicas e atendimento personalizado para proteger seus direitos com ética e modernidade.</h2>
-            <br>
-            <a href="#contatos" class="btn-contato">ENTRE EM CONTATO</a>
+    <!-- Menu mobile -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Advogado</a>
+        <a href="#atuacoes">Atuação</a>
+        <a href="#contato">Consulta</a>
+    </div>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+        <div class="hero-text">
+            <span class="hero-eyebrow">Advocacia Estratégica</span>
+            <h1 class="hero-titulo">
+                YVES
+                <span class="sobrenome">JIVAGO</span>
+            </h1>
+            <div class="hero-linha"></div>
+            <p class="hero-subtitulo">
+                Soluções jurídicas estratégicas em Direito de Família e Direito Médico,
+                com atendimento personalizado e comprometido com a defesa dos seus direitos.
+            </p>
+            <div class="hero-btns">
+                <a href="#contato" class="btn-prata">
+                    <i class="fas fa-balance-scale"></i> Agendar Consulta
+                </a>
+                <a href="#sobre" class="btn-outline">
+                    <i class="fas fa-user-tie"></i> Conhecer o Advogado
+                </a>
+            </div>
+            <div class="hero-badges">
+                <div class="badge">
+                    <div class="badge-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h4>Pós-Graduando</h4>
+                    <p>Direito Civil, Processo Civil e Direito Médico</p>
+                </div>
+                <div class="badge">
+                    <div class="badge-icon"><i class="fas fa-globe"></i></div>
+                    <h4>Multilíngue</h4>
+                    <p>Inglês, Espanhol, Francês e Latim</p>
+                </div>
+                <div class="badge">
+                    <div class="badge-icon"><i class="fas fa-handshake"></i></div>
+                    <h4>Atendimento</h4>
+                    <p>Personalizado e humanizado</p>
+                </div>
+            </div>
         </div>
 
-        <div class="caixas_sobre_inicio">
-            <div class="caixa1_inicio reveal-up" >
-                <h3>Experiência</h3>
-                <p>Atendimento estratégico com foco em resultados sólidos e técnica apurada.</p>
+        <div class="hero-foto">
+            <div class="hero-foto-overlay"></div>
+            <img src="yves-pensativo.jpeg" alt="Dr. Yves Jivago" id="heroImg">
+            <div class="hero-foto-tag">
+                <span class="hero-foto-tag-name">Yves Jivago</span>
+                <span class="hero-foto-tag-role">OAB • Advogado Civilista</span>
             </div>
-            <div class="caixa1_inicio reveal-up">
-                <h3>Compromisso</h3>
-                <p>Nossa prioridade absoluta é a defesa de seus interesses com transparência.</p>
-            </div>
-            <div class="caixa1_inicio reveal-up ">
-                <h3>Multilinguismo</h3>
-                <p>Capacidade de atuação em ambientes internacionais (Inglês, Espanhol, Francês e Latim).</p>
-            </div>
+        </div>
+
+        <a href="#sobre" class="scroll-hint" aria-label="Rolar para baixo">
+            <span></span>
+        </a>
+    </section>
+
+    <!-- ============ FAIXA DE DESTAQUES ============ -->
+    <section class="faixa">
+        <div class="faixa-inner">
+            <div class="faixa-item"><i class="fas fa-scale-balanced"></i><span>Direito de Família</span></div>
+            <div class="faixa-sep"></div>
+            <div class="faixa-item"><i class="fas fa-stethoscope"></i><span>Direito Médico</span></div>
+            <div class="faixa-sep"></div>
+            <div class="faixa-item"><i class="fas fa-shield-halved"></i><span>Atendimento Sigiloso</span></div>
+            <div class="faixa-sep"></div>
+            <div class="faixa-item"><i class="fas fa-clock"></i><span>Resposta Rápida</span></div>
         </div>
     </section>
 
-    <section class="divisao1"></section>
-
-    <section class="Sobre" id="sobre">
-        <div class="container_sobre">
-            <div class="div_foto reveal-left">
-                <img src="Yves.jpeg" alt="Advogado Yves Jivago">
-                <div class="card_nome">
+    <!-- ============ SOBRE O ADVOGADO ============ -->
+    <section class="sobre" id="sobre">
+        <div class="sobre-inner">
+            <div class="sobre-foto-wrap reveal reveal-left">
+                <div class="sobre-foto-moldura">
+                    <img src="yves-cruzado.jpeg" alt="Dr. Yves Jivago - Advogado">
+                </div>
+                <div class="sobre-foto-deco"></div>
+                <div class="sobre-card">
                     <h3>Yves Jivago</h3>
                     <p>Advogado Civilista</p>
                 </div>
             </div>
 
-            <div class="div_sobre reveal-right">
-                <h2>Sobre o Advogado</h2>
-                <p><strong>Olá, sou o Yves Jivago Leal Felix.</strong> Sou advogado civilista com ampla experiência prática e sólida formação acadêmica.</p>
-                <p>Pós-graduando em Direito Civil, Processo Civil, Direito Médico e Internacional, minha trajetória é marcada pela proatividade e versatilidade.</p>
-                <p>É uma honra prestar consultoria jurídica com excelência e profundo senso de responsabilidade.</p>
-            </div>
-        </div>
-    </section>
+            <div class="sobre-texto reveal reveal-right">
+                <span class="secao-label">Sobre o Advogado</span>
+                <h2>Comprometido com a <em>defesa dos seus direitos</em></h2>
+                <p>
+                    <strong>Olá, sou Yves Jivago Leal Felix.</strong> Advogado civilista com
+                    ampla experiência prática e sólida formação acadêmica, especializado em
+                    Direito de Família e Direito Médico.
+                </p>
+                <p>
+                    Pós-graduando em Direito Civil, Processo Civil, Direito Médico e
+                    Internacional, minha trajetória é marcada pela proatividade, versatilidade
+                    e pela busca constante pela excelência jurídica.
+                </p>
+                <p>
+                    É uma honra prestar consultoria jurídica com seriedade, profundo senso de
+                    responsabilidade e total transparência com cada cliente.
+                </p>
 
-    <section class="divisao2"></section>
-
-    <section class="Atuacoes" id="atuacoes">
-        <h2 class="reveal-up">Áreas de Atuação</h2>
-        <div class="div_atuacoes">
-            <div class="reveal-up">
-                <h1>Pensão Alimentícia</h1>
-                <p>Atuação em fixação, revisão e execução de pensão, garantindo o direito à subsistência de forma justa.</p>
-            </div> 
-            <div class="reveal-up">
-                <h1>Guarda de Filhos</h1>
-                <p>Assessoria em guarda unilateral ou compartilhada, priorizando sempre o melhor interesse da criança.</p>
-            </div> 
-            <div class="reveal-up">
-                <h1>Inventário</h1>
-                <p>Orientação em inventários judiciais e extrajudiciais, assegurando organização patrimonial aos herdeiros.</p>
-            </div> 
-            <div class="reveal-up">
-                <h1>Divórcio e União Estável</h1>
-                <p>Assistência em dissoluções consensuais ou litigiosas, focando na proteção dos direitos patrimoniais.</p>
-            </div> 
-            <div class="reveal-up">
-                <h1>Regularização de Imóveis</h1>
-                <p>Análise documental e registro imobiliário para adequação da situação do bem junto aos órgãos.</p>
-            </div> 
-            <div class="reveal-up">
-                <h1>Negativa de Plano de Saúde</h1>
-                <p>Defesa do consumidor contra negativas indevidas, buscando garantir o acesso imediato ao tratamento.</p>
-            </div>    
-        </div>
-    </section>
-
-    <section class="fale-conosco" id="contatos">
-        <div class="container">
-            <div class="contact-info reveal-left">
-                <h2 class="title">Fale Conosco</h2>
-                <p class="subtitle">Agende uma consultoria para analisarmos seu caso com a atenção que ele merece.</p>
-                
-                <div class="contact-item">
-                    <span class="icon">📞</span>
-                    <a href="tel:8699091309">(86) 9909-1309</a>
+                <div class="sobre-stats">
+                    <div class="stat"><span class="stat-num" data-count="4" data-suffix="+">0</span><span class="stat-label">Idiomas de atuação</span></div>
+                    <div class="stat"><span class="stat-num" data-count="6">0</span><span class="stat-label">Áreas de especialidade</span></div>
+                    <div class="stat"><span class="stat-num" data-count="100" data-suffix="%">0</span><span class="stat-label">Dedicação ao cliente</span></div>
+                    <div class="stat"><span class="stat-num stat-text">OAB</span><span class="stat-label">Regularmente inscrito</span></div>
                 </div>
-                
-                <div class="contact-item">
-                    <span class="icon">✉️</span>
-                    <a href="mailto:contato@yvesjivago.adv.br">contato@yvesjivago.adv.br</a>
-                </div>
-                
-                <a href="https://wa.me/558699091309" target="_blank" class="btn-whatsapp">Falar agora no WhatsApp</a>
-            </div>
-
-            <div class="contact-image reveal-right">
-                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Justiça">
             </div>
         </div>
     </section>
 
-    <footer class="footer-site">
-        <div class="container-footer">
-            <div class="footer-column">
-                <h3>MAPA DO SITE</h3>
+    <!-- ============ ÁREAS DE ATUAÇÃO ============ -->
+    <section class="atuacoes" id="atuacoes">
+        <div class="atuacoes-header reveal">
+            <span class="secao-label secao-label-claro">Especialidades</span>
+            <h2>Áreas de Atuação</h2>
+            <p>Atuação dedicada nas principais demandas do Direito de Família e Direito Médico.</p>
+        </div>
+
+        <div class="atuacoes-grid">
+            <div class="area-card reveal"><span class="area-num">01</span><span class="area-icon"><i class="fas fa-child"></i></span><h3>Pensão Alimentícia</h3><p>Atuação em fixação, revisão e execução de pensão alimentícia, garantindo o direito à subsistência de forma justa e eficaz.</p></div>
+            <div class="area-card reveal"><span class="area-num">02</span><span class="area-icon"><i class="fas fa-users"></i></span><h3>Guarda de Filhos</h3><p>Assessoria em guarda unilateral ou compartilhada, priorizando sempre o melhor interesse da criança e da família.</p></div>
+            <div class="area-card reveal"><span class="area-num">03</span><span class="area-icon"><i class="fas fa-scroll"></i></span><h3>Inventário</h3><p>Orientação em inventários judiciais e extrajudiciais, assegurando organização patrimonial e proteção dos herdeiros.</p></div>
+            <div class="area-card reveal"><span class="area-num">04</span><span class="area-icon"><i class="fas fa-heart-crack"></i></span><h3>Divórcio e União Estável</h3><p>Assistência em dissoluções consensuais ou litigiosas, focando na proteção dos direitos patrimoniais de cada parte.</p></div>
+            <div class="area-card reveal"><span class="area-num">05</span><span class="area-icon"><i class="fa-solid fa-shield"></i></span><h3>Proteção jurídica para pacientes e profissionais da saúde.</h3><p>Defesa integral em saúde: erros médicos, negativas de planos, medicamentos e responsabilidade civil de profissionais e instituições.</p></div>
+            <div class="area-card reveal"><span class="area-num">06</span><span class="area-icon"><i class="fas fa-notes-medical"></i></span><h3>Negativa de Plano de Saúde</h3><p>Defesa do consumidor contra negativas indevidas, buscando garantir acesso imediato ao tratamento necessário.</p></div>
+        </div>
+    </section>
+
+    <!-- ============ CITAÇÃO ============ -->
+    <section class="citacao">
+        <div class="citacao-inner reveal">
+            <i class="fas fa-quote-left"></i>
+            <blockquote>A justiça é a constante e perpétua vontade de dar a cada um o que é seu.</blockquote>
+            <cite>— Ulpiano, jurista romano</cite>
+        </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="contato" id="contato">
+        <div class="contato-inner">
+            <div class="contato-texto reveal reveal-left">
+                <span class="secao-label">Fale Conosco</span>
+                <h2>Agende sua consulta</h2>
+                <p>
+                    Agende uma consultoria para analisarmos seu caso com a atenção e o
+                    cuidado que ele merece. Atendimento personalizado e sigiloso.
+                </p>
+                <div class="contato-items">
+                    <a href="https://wa.me/558699091309" target="_blank" class="contato-item">
+                        <div class="contato-item-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div class="contato-item-text"><small>WhatsApp</small><span>(86) 9909-1309</span></div>
+                        <i class="fas fa-arrow-right contato-item-arrow"></i>
+                    </a>
+                    <a href="mailto:contato@yvesjivago.adv.br" class="contato-item">
+                        <div class="contato-item-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contato-item-text"><small>E-mail</small><span>contato@yvesjivago.adv.br</span></div>
+                        <i class="fas fa-arrow-right contato-item-arrow"></i>
+                    </a>
+                    <a href="https://www.instagram.com/yvesjivago/" target="_blank" class="contato-item">
+                        <div class="contato-item-icon"><i class="fab fa-instagram"></i></div>
+                        <div class="contato-item-text"><small>Instagram</small><span>@yvesjivago</span></div>
+                        <i class="fas fa-arrow-right contato-item-arrow"></i>
+                    </a>
+                </div>
+                <a href="https://wa.me/558699091309" target="_blank" class="btn-whats">
+                    <i class="fab fa-whatsapp"></i> Falar agora no WhatsApp
+                </a>
+            </div>
+
+            <div class="contato-visual reveal reveal-right">
+                <div class="contato-visual-deco"></div>
+                <img src="justica.svg" alt="Balança da Justiça">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="logo.jpeg" alt="Logo Yves Jivago">
+                <p>
+                    Advocacia especializada em Direito de Família e Direito Médico,
+                    com atendimento humanizado e comprometido com a excelência jurídica.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegação</h4>
                 <ul>
-                    <li><a href="#inicio">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#atuacoes">Atuação</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre o Advogado</a></li>
+                    <li><a href="#atuacoes">Áreas de Atuação</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </div>
-
-            <div class="footer-column">
-                <h3>ESPECIALIDADES</h3>
+            <div class="footer-col">
+                <h4>Especialidades</h4>
                 <ul>
                     <li><a href="#atuacoes">Direito de Família</a></li>
-                    <li><a href="#atuacoes">Sucessões</a></li>
+                    <li><a href="#atuacoes">Direito Médico</a></li>
+                    <li><a href="#atuacoes">Inventário</a></li>
                     <li><a href="#atuacoes">Direito Imobiliário</a></li>
                 </ul>
             </div>
-
-            <div class="footer-column">
-                <h3>CONTATO</h3>
+            <div class="footer-col">
+                <h4>Contato</h4>
                 <p>(86) 9909-1309</p>
-                <p>contato@yvesjivago.adv.br</p>
-                <p>Atendimento especializado</p>
+                <p style="margin-top:8px">contato@yvesjivago.adv.br</p>
+                <p style="margin-top:8px">@yvesjivago.adv</p>
             </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Yves Jivago. Todos os direitos reservados.</span>
+            <span>OAB — Advogado Civilista</span>
         </div>
     </footer>
 
-    <div class="botoes-flutuantes">
-        <a href="https://www.instagram.com/yvesjivago/" target="_blank" class="btn-float insta">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-        </a>
-        <a href="https://wa.me/558699091309" target="_blank" class="btn-float whats">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-        </a>
+    <!-- ============ BOTÕES FLUTUANTES ============ -->
+    <div class="float-btns">
+        <a href="https://www.instagram.com/yvesjivago.adv/" target="_blank" class="float-btn insta" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/558699091309" target="_blank" class="float-btn whats" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
     </div>
 
-    <script>
-        const observerOptions = { threshold: 0.15 };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, observerOptions);
-
-        const elements = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
-        elements.forEach(el => observer.observe(el));
-    </script>
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>

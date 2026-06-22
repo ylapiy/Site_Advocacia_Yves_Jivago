@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 600" width="520" height="600">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1b3631"/>
+      <stop offset="100%" style="stop-color:#2a5045"/>
+    </linearGradient>
+    <linearGradient id="silver2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4d4d4"/>
+      <stop offset="50%" style="stop-color:#f0f0f0"/>
+      <stop offset="100%" style="stop-color:#b8b8b8"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="600" fill="url(#bg2)"/>
+  <!-- Decorative circles -->
+  <circle cx="420" cy="80" r="140" fill="none" stroke="rgba(236,233,226,0.05)" stroke-width="1"/>
+  <circle cx="420" cy="80" r="100" fill="none" stroke="rgba(236,233,226,0.04)" stroke-width="1"/>
+  <circle cx="100" cy="530" r="130" fill="none" stroke="rgba(236,233,226,0.04)" stroke-width="1"/>
+  <!-- Books -->
+  <rect x="90" y="375" width="190" height="30" rx="4" fill="#0f2820" stroke="rgba(236,233,226,0.15)" stroke-width="1"/>
+  <rect x="100" y="348" width="172" height="30" rx="4" fill="#163229" stroke="rgba(236,233,226,0.12)" stroke-width="1"/>
+  <rect x="110" y="320" width="155" height="30" rx="4" fill="#1a3630" stroke="rgba(236,233,226,0.10)" stroke-width="1"/>
+  <rect x="90" y="375" width="9" height="30" rx="3" fill="#b8b8b8" opacity="0.55"/>
+  <rect x="100" y="348" width="9" height="30" rx="3" fill="#b8b8b8" opacity="0.45"/>
+  <rect x="110" y="320" width="9" height="30" rx="3" fill="#b8b8b8" opacity="0.35"/>
+  <!-- Scale pillar -->
+  <rect x="253" y="195" width="14" height="215" fill="url(#silver2)" rx="3"/>
+  <!-- Scale base -->
+  <rect x="200" y="398" width="120" height="14" fill="url(#silver2)" rx="5"/>
+  <rect x="212" y="407" width="96" height="24" fill="url(#silver2)" rx="4"/>
+  <!-- Scale arm -->
+  <rect x="178" y="190" width="164" height="12" fill="url(#silver2)" rx="4"/>
+  <!-- Chains -->
+  <line x1="198" y1="200" x2="170" y2="278" stroke="#c4c4c4" stroke-width="2.5" opacity="0.7"/>
+  <line x1="322" y1="200" x2="350" y2="268" stroke="#c4c4c4" stroke-width="2.5" opacity="0.7"/>
+  <!-- Left pan -->
+  <ellipse cx="163" cy="290" rx="45" ry="14" fill="#163229" stroke="url(#silver2)" stroke-width="2.5"/>
+  <line x1="163" y1="277" x2="127" y2="288" stroke="#b8b8b8" stroke-width="1.8" opacity="0.75"/>
+  <line x1="163" y1="277" x2="199" y2="288" stroke="#b8b8b8" stroke-width="1.8" opacity="0.75"/>
+  <!-- Right pan -->
+  <ellipse cx="357" cy="280" rx="45" ry="14" fill="#163229" stroke="url(#silver2)" stroke-width="2.5"/>
+  <line x1="357" y1="267" x2="321" y2="278" stroke="#b8b8b8" stroke-width="1.8" opacity="0.75"/>
+  <line x1="357" y1="267" x2="393" y2="278" stroke="#b8b8b8" stroke-width="1.8" opacity="0.75"/>
+  <!-- Center jewel -->
+  <circle cx="260" cy="193" r="16" fill="#163229" stroke="url(#silver2)" stroke-width="3"/>
+  <circle cx="260" cy="193" r="7" fill="url(#silver2)" opacity="0.85"/>
+  <!-- Divider line -->
+  <line x1="150" y1="442" x2="370" y2="442" stroke="rgba(236,233,226,0.10)" stroke-width="1"/>
+  <!-- Text -->
+  <text x="260" y="488" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#ece9e2" letter-spacing="8" opacity="0.9">ADVOCACIA</text>
+  <text x="260" y="516" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#b8b8b8" letter-spacing="4" opacity="0.65">DIREITO E JUSTIÇA</text>
+  <line x1="190" y1="132" x2="330" y2="132" stroke="rgba(212,212,212,0.20)" stroke-width="1"/>
+  <text x="260" y="122" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#b8b8b8" letter-spacing="4" opacity="0.55">YVES JIVAGO</text>
+  <line x1="190" y1="138" x2="330" y2="138" stroke="rgba(212,212,212,0.12)" stroke-width="1"/>
+</svg>
