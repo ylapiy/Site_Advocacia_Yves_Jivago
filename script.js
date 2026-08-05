@@ -1,4 +1,6 @@
-   /* ---------------------------------------------------------
+document.addEventListener('DOMContentLoaded', () => {
+
+    /* ---------------------------------------------------------
        1) NAVBAR — muda de estilo ao rolar a página
        --------------------------------------------------------- */
     const navbar = document.getElementById('navbar');
