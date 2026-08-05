@@ -1,10 +1,4 @@
-/* ============================================================
-   YVES JIVAGO — ADVOCACIA  |  style.css
-   Paleta: verde #1b3631 · creme #ece9e2 · prata #b8b8b8
-   Fontes: Cormorant Garamond (títulos) · Montserrat (corpo)
-   ============================================================ */
 
-/* ── RESET & VARIÁVEIS ── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
